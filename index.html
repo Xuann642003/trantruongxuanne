@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="anh9.jpg" alt="Centered Image" class="center-image">
+        <img src="image/anh9.jpg" alt="Centered Image" class="center-image">
         <div class="square1"></div>
         <div class="square2"></div>
         <div class="square3">
@@ -24,17 +24,17 @@
             <span class="name">NINO.</span>
         </div>
         <div class="image-stack">
-            <img src="a1.jpg" alt="Image 1">
-            <img src="a2.jpg" alt="Image 2">
-            <img src="a3.jpg" alt="Image 3">
+            <img src="image/a1.jpg" alt="Image 1">
+            <img src="image/a2.jpg" alt="Image 2">
+            <img src="image/a3.jpg" alt="Image 3">
         </div>
         <div class="design_1">
             <div class="design_1_1">
-                <img src="ichika.png" alt="Image 1" id="image1">
-                <img src="nino.png" alt="Image 2" id="image2">
-                <img src="miku.png" alt="Image 3" id="image3">
-                <img src="yotsuba.png" alt="Image 4" id="image4">
-                <img src="itsuki.png" alt="Image 5" id="image5">
+                <img src="image/ichika.png" alt="Image 1" id="image1">
+                <img src="image/nino.png" alt="Image 2" id="image2">
+                <img src="image/miku.png" alt="Image 3" id="image3">
+                <img src="image/yotsuba.png" alt="Image 4" id="image4">
+                <img src="image/itsuki.png" alt="Image 5" id="image5">
             </div>
             <div class="design_1_2"></div>
             <div class="design_1_3"></div>
@@ -79,21 +79,24 @@
         <div class="inner-container">
             <div class="grid-container">
                 <div class="grid-item">
-                  <img src="a4.jpg" alt="Image 1">
+                  <img src="image/a4.jpg" alt="Image 1">
                 </div>
                 <div class="grid-item">
-                  <img src="a5.jpg" alt="Image 2">
+                  <img src="image/a5.jpg" alt="Image 2">
                 </div>
                 <div class="grid-item">
-                  <img src="a6.jpg" alt="Image 3">
+                  <img src="image/a6.jpg" alt="Image 3">
                 </div>
                 <div class="grid-item">
-                  <img src="a7.jpg" alt="Image 4">
+                  <img src="image/a7.jpg" alt="Image 4">
                 </div>
             </div>
             <h1 style="font-size: 10px; margin-top: 20px; text-align: center;">TRAN TRUONG XUAN</h1>         
         </div>
         <div class="cons-1">
+            <div class="cons-11"></div>
+            <div class="cons-12"></div>
+            <div class="cons-13"></div>
             <i class="fa-solid fa-heart" style="margin: 10px;"></i>
             <div class="chu">
                 <span style="--color:#ffffff;--delay:0s">N</span>
@@ -107,77 +110,50 @@
                 <span style="--color:#ffffff;--delay:2s">N</span>
                 <span style="--color:#ffffff;--delay:2.25s">O</span>
             </div>
+            <div class="cons-ten">
+                DESGIN BY YANNACHAN
+            </div>
         </div>
-    </div>
-    
+        <div class="cons-2">
+            <i class="fa-solid fa-bars"></i>
+            <input type="text" class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="avatar"></div>
+        </div>
+        <div class="cons-3">
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="cons-31">
+                
+            </div>
+        </div>
+        <div class="cons-4">
+            <img src="image/a11.jpg" class="img-1" alt="Image 11">
+        </div>
+        <div class="cons-5">
+            <div class="cons-51">
+                <div class="cons-51-1">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="cons-51-2">
+                    <i class="fa-solid fa-volume-xmark"></i>               
+                </div>
+                <div class="cons-51-3">
+                    <i class="fa-solid fa-heart" id="toggle-icon-heart"></i>
+                </div>
+                <div class="cons-51-4"></div>
+                <div class="cons-51-5"></div>
+            </div>
+            <div class="cons-52"></div>
+            <div class="cons-53"></div>
+            <div class="cons-54"></div>
+            <div class="cons-55"></div>  
+        </div>
+        <div class="cons-6" id="cons-6">
+
+        </div>
+    </div>  
 </body>
-<script>
-    // Add event listener to image1
-    document.getElementById('image1').addEventListener('click', function() {
-        // Get the div elements
-        var design2 = document.getElementById('design2');
-        var design21 = document.getElementById('design21');
-
-        // Check which div is currently displayed and switch
-        if (design2.style.display !== "none") {
-            // Hide design_2 and show design_2_1
-            design2.style.display = "none";
-            design21.style.display = "block";
-        } else {
-            // Hide design_2_1 and show design_2
-            design21.style.display = "none";
-            design2.style.display = "block";
-        }
-    });
-
-    // Lấy các phần tử từ DOM
-const playBtn = document.getElementById("play-btn");
-const audio = document.getElementById("audio");
-const progressBar = document.getElementById("progress-bar");
-const currentTimeElem = document.getElementById("current-time");
-const durationElem = document.getElementById("duration");
-
-// Thay đổi trạng thái phát/dừng
-playBtn.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        playBtn.textContent = "⏸"; // Đổi nút thành pause
-    } else {
-        audio.pause();
-        playBtn.textContent = "▶"; // Đổi nút thành play
-    }
-});
-
-// Cập nhật thời gian phát hiện tại và thanh tiến trình
-audio.addEventListener("timeupdate", () => {
-    const currentTime = audio.currentTime;
-    const duration = audio.duration;
-
-    progressBar.value = (currentTime / duration) * 100;
-
-    // Hiển thị thời gian phát hiện tại và tổng thời gian
-    currentTimeElem.textContent = formatTime(currentTime);
-    durationElem.textContent = formatTime(duration);
-});
-
-// Cập nhật vị trí phát khi kéo thanh tiến trình
-progressBar.addEventListener("input", () => {
-    const duration = audio.duration;
-    audio.currentTime = (progressBar.value / 100) * duration;
-});
-
-// Hàm định dạng thời gian (từ giây -> mm:ss)
-function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-}
-
-// Đặt tổng thời gian khi tải xong audio
-audio.addEventListener("loadedmetadata", () => {
-    durationElem.textContent = formatTime(audio.duration);
-});
-
-
-</script>
+<script src="script/script1.js"></script>
+<script src="script/script2.js"></script>
+<script src="script/script3.js"></script>
 </html>

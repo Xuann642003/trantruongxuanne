@@ -343,7 +343,7 @@ body {
 
 .cons-1  {
     position: absolute;
-    width: 150px;
+    width: 200px;
     height: 30px;
     border-bottom: 2px solid #ff007f;
     display: flex;
@@ -353,8 +353,213 @@ body {
     margin-top: -700px;
 }
 
+.cons-11 {width: 10px;height: 10px;background-color: #ff007f; margin: 2px; animation: change1 3s infinite;}
+.cons-12 {width: 10px;height: 10px;background-color: red; margin: 2px; animation: change2 3s infinite;}
+.cons-13 {width: 10px;height: 10px;background-color: aqua; margin: 2px; animation: change3 3s infinite;}
 
+@keyframes change1 {
+    0% {background-color: #ff007f;}
+    25% {background-color: red;}
+    50% {background-color: aqua;}
+    75% {background-color: yellow;}
+    100% {background-color: #ff007f;}
+}
 
+@keyframes change2 {
+    0% {background-color: red;}
+    25% {background-color: aqua;}
+    50% {background-color: yellow;}
+    75% {background-color: #ff007f;}
+    100% {background-color: red;}
+}
 
+@keyframes change3 {
+    0% {background-color: aqua;}
+    25% {background-color: yellow;}
+    50% {background-color: #ff007f;}
+    75% {background-color: red;}
+    100% {background-color: aqua;}
+}
 
+.cons-ten {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    color: #ff007f;
+}
 
+.cons-2 {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    background-color: #ff007f;
+    /* border-radius:20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -300px;
+    margin-top: -850px;
+}
+
+input[type="text"] {
+    caret-color: aqua;
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ff007f; 
+    border: 1px solid #ff007f;
+    padding: 5px;
+    margin-left: 10px;
+    color:aqua;
+    animation: color-change 2s infinite linear;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes color-change {
+    0% {
+        color: aqua;
+    }
+    33% {
+        color: red;
+    }
+    66% {
+        color: lime;
+    }
+    100% {
+        color: aqua;
+    }
+}
+
+input[type="text"]:focus {
+    background-color: #ff007f; 
+    border-color: #ff007f;     
+    outline: none;            
+}
+
+input[type="text"]:hover {
+    cursor: pointer;
+}
+.fa-bars {
+    margin-right: 10px;
+}
+
+.fa-magnifying-glass {
+    margin-left: 10px;
+}
+
+.fa-magnifying-glass:hover , .fa-bars:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.cons-3 {
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: -800px;
+    background-image: url(anh7.jpeg);
+    background-size: cover;
+}
+
+.fa-ellipsis-v {
+    margin-right: -200px;
+    margin-top: -55px;
+}
+
+.fa-ellipsis-v:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cons-31 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ff007f;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    z-index: 999;
+}
+
+.cons-4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: -730px;
+    margin-left: 1650px;
+}
+
+.img-1 {
+    width: 200px;
+}
+
+.cons-5 {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    margin-top: 150px;
+    margin-left: 400px;
+    border-radius: 10px;
+}
+
+.cons-51 { 
+    width: 150px;
+    height: 30px;
+    background-color: aqua;
+    margin-top: -40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cons-51-1 , .cons-51-2 , .cons-51-3 , .cons-51-4 , .cons-51-5 {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-house:hover  , .fa-volume-xmark:hover  , .fa-heart:hover  {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform 0.7s ease-in-out;
+    animation: doi-mau 1s infinite linear;
+}
+
+@keyframes doi-mau {
+    50% {
+        color:#fff;
+    }
+    100% {
+        color:#ff007f;
+    }
+}
+
+.cons-6 {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-left: -1200px;
+    margin-top: 100px;
+    display: none;
+}
