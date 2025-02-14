@@ -466,7 +466,7 @@ input[type="text"]:hover {
     align-items: center;
     margin-left: 800px;
     margin-top: -800px;
-    background-image: url(anh7.jpeg);
+    background-image: url(image/anh7.jpeg);
     background-size: cover;
 }
 
@@ -537,7 +537,7 @@ input[type="text"]:hover {
     align-items: center;
 }
 
-.fa-house:hover  , .fa-volume-xmark:hover  , .fa-heart:hover  {
+.fa-house:hover  , .fa-volume-xmark:hover  , .fa-heart:hover , .fa-star:hover {
     cursor: pointer;
     transform: rotate(360deg);
     transition: transform 0.7s ease-in-out;
@@ -558,6 +558,17 @@ input[type="text"]:hover {
     width: 500px;
     height: 700px;
     background-color: aqua;
+    border-radius: 10px;
+    margin-left: -1200px;
+    margin-top: 100px;
+    display: none;
+}
+
+.cons-6-1{
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    background-color: red;
     border-radius: 10px;
     margin-left: -1200px;
     margin-top: 100px;
