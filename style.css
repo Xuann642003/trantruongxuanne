@@ -569,6 +569,7 @@ input[type="text"]:hover {
     margin-left: -1200px;
     margin-top: 100px;
     display: none;
+    border:2px solid #fff;
 }
 
 .cons-6-cha {
@@ -602,6 +603,41 @@ input[type="text"]:hover {
     margin-left: -300px;
     border-radius: 20px;
     
+}
+
+.setting-6-1 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 10px;
+    width: 140px;
+    margin-top: 55px;
+    margin-left: 410px;
+}
+
+.fa-microphone:hover , .fa-headphones:hover , .fa-video:hover , .fa-plus:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+    animation: doi-mau 1s infinite linear;
+}
+
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f4c542; /* Màu vàng */
+    font-size: 24px;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box.purple {
+    background-color: #6a5acd; /* Màu tím */
 }
 
 .setting-6-2 {
@@ -638,6 +674,7 @@ input[type="text"]:hover {
     background-size: cover;
     margin-top: -50px;
     margin-left: -50px;
+    border: 2px solid #fff;
 }
 
 .setting-6-3 {
@@ -655,6 +692,7 @@ input[type="text"]:hover {
     font-family: Arial, sans-serif;
     font-size: 11px;
     padding: 2PX;
+    border: 2px solid #fff;
 }
 
 h777 {
@@ -699,5 +737,9 @@ h778 {
     border-radius: 10px;
     margin-left: -1200px;
     margin-top: 100px;
+    display: none;
+}
+
+.hidden {
     display: none;
 }
